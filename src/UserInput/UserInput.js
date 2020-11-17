@@ -1,14 +1,7 @@
 import React from "react";
 
-const userInput = (props) => {
-    const style = {
-        border: '2px solid blue'
-    }
-    return <input 
-    type="text" 
-    style={style}
-    onChange={props.changed}
-    value={props.currentName}/>;
+const userInput = () => {
+  return <input type="text" />;
 };
 
 export default userInput;
