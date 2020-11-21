@@ -4,6 +4,7 @@ const userOutput = () => {
     <div>
       <p>random text</p>
       <p>Am I overwritten?!</p>
+      <label></label>
     </div>
   );
 };
