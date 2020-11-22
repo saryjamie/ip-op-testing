@@ -5,12 +5,24 @@ import UserInput from "./userInput/UserInput";
 import UserOutput from "./userOutput/UserOutput";
 
 class App extends Component {
+  state = {
+    username: "Sary Jamie",
+  };
+
+  inputChangedHandler = (e) => {
+    this.setState({ username: e.target.value });
+  };
+
   render() {
     return (
       <div className="App">
-        <UserInput />
-        <UserOutput />
-
+        <UserInput
+          changed={this.inputChangedHandler}
+          currentName={this.state.username}
+        />
+        <UserOutput userName={this.state.username} />
+        <UserOutput userName="Gillaume" />
+        <UserOutput userName="Stephano" />
         <ol>
           <li>Create TWO new components: UserInput and UserOutput</li>
           <li>

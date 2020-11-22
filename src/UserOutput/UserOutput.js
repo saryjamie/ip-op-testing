@@ -1,10 +1,10 @@
 import React from "react";
-const userOutput = () => {
+import "./userOutput.css";
+const userOutput = (props) => {
   return (
-    <div>
-      <p>random text</p>
+    <div className="userOutput">
+      <p>My name is {props.userName}</p>
       <p>Am I overwritten?!</p>
-      <label></label>
     </div>
   );
 };
